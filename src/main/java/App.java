@@ -11,26 +11,17 @@ public class App {
         Vehicle vehicleA = new Vehicle("nameA","brandA");
         Vehicle vehicleB = new Vehicle("nameB","brandB");
 
-        vehicleA.accerlate(30);
-        vehicleB.accerlate(40);
+        vehicleA.speedUp(30);
+        vehicleB.speedUp(40);
+
+        Car carC = new Car("nameC","brandC");
+        carC.speedUp(180);
+        carC.speedUp(220);
+
+
     }
 
 }
 
-class Vehicle{
-    private String name;
-    private String brand;
-
-    public Vehicle(String name, String brand){
-        this.name = name;
-        this.brand = brand;
-    }
-
-    public void accerlate(int speed){
-        System.out.print("Name: " + this.name + ", Brand: " + this.brand);
-        System.out.println(" - Speeded up to " + speed);
-    }
-
-}
 
 
