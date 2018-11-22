@@ -23,7 +23,7 @@ class Car extends Vehicle{
     @Override
     public void speedUp(int speed) {
         if (speed > 200){
-            System.out.println(this.name + ":Car failed to speed up");
+            System.out.println("Car failed to speed up");
         } else {
             super.speedUp(speed);
         }

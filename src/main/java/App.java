@@ -18,13 +18,38 @@ public class App {
         carC.speedUp(180);
         carC.speedUp(220);
 
-        Bus carD = new Bus("nameD","brandD");
-        carD.speedUp(70);
-        carD.speedUp(170);
+        Bus busD = new Bus("nameD","brandD");
+        busD.speedUp(70);
+        busD.speedUp(170);
+
+        Driver driverA = new Driver(vehicleA,"driveA");
+        driverA.speedUp(90);
+
+        Driver driverB = new Driver(vehicleB,"driveB");
+        driverB.speedUp(90);
+
+        Driver driverC = new Driver(carC,"driveC");
+        driverC.speedUp(110);
+
+        Driver driverD = new Driver(busD,"driveD");
+        driverD.speedUp(200);
 
     }
 
 }
 
 
+class Driver{
+    String name;
+    Vehicle vehicle;
 
+    public Driver(Vehicle vehicle, String name) {
+        this.vehicle = vehicle;
+        this.name = name;
+    }
+
+    public void speedUp(int i) {
+        System.out.println("I am driver: " + this.name);
+        this.vehicle.speedUp(i);
+    }
+}
