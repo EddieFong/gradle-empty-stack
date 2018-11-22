@@ -7,7 +7,7 @@ public class App {
     }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+//        System.out.println(new App().getGreeting());
         Vehicle vehicleA = new Vehicle("nameA","brandA");
         Vehicle vehicleB = new Vehicle("nameB","brandB");
 
@@ -18,6 +18,9 @@ public class App {
         carC.speedUp(180);
         carC.speedUp(220);
 
+        Bus carD = new Bus("nameD","brandD");
+        carD.speedUp(70);
+        carD.speedUp(170);
 
     }
 

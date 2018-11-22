@@ -23,11 +23,28 @@ class Car extends Vehicle{
     @Override
     public void speedUp(int speed) {
         if (speed > 200){
-            System.out.println(this.name + ": Fail to speed up");
+            System.out.println(this.name + ":Car failed to speed up");
         } else {
             super.speedUp(speed);
         }
     }
 
+}
+
+
+class Bus extends Vehicle{
+
+    public Bus(String name, String brand) {
+        super(name, brand);
+    }
+
+    @Override
+    public void speedUp(int speed) {
+        if (speed > 80){
+            System.out.println(this.name + ":Bus failed to speed up");
+        } else {
+            super.speedUp(speed);
+        }
+    }
 
 }
