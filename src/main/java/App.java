@@ -8,5 +8,29 @@ public class App {
 
     public static void main(String[] args) {
         System.out.println(new App().getGreeting());
+        Vehicle vehicleA = new Vehicle("nameA","brandA");
+        Vehicle vehicleB = new Vehicle("nameB","brandB");
+
+        vehicleA.accerlate(30);
+        vehicleB.accerlate(40);
     }
+
 }
+
+class Vehicle{
+    private String name;
+    private String brand;
+
+    public Vehicle(String name, String brand){
+        this.name = name;
+        this.brand = brand;
+    }
+
+    public void accerlate(int speed){
+        System.out.print("Name: " + this.name + ", Brand: " + this.brand);
+        System.out.println(" - Speeded up to " + speed);
+    }
+
+}
+
+
